@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss' ;
+.sidenav{
+    width: $sideNavWidth;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 1em 0 1em rgba(0,0,0,.2);
+    z-index: 1;
+    background-color: white;
+    overflow: auto;
+    transform: translateX(-150%);
+}
+.sidenav.open{
+    transform: translateX(0);
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: orangered;
+    font-weight: 700;
+    font-family: yeonSung;
+    padding: 1em 0em;
+    text-transform: uppercase;
+}

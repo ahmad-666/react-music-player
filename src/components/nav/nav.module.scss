@@ -1,0 +1,26 @@
+@import '../../styles//variables.scss' ;
+.nav{
+    width: calc(100% - #{$sideNavWidth * 2}) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo{
+    width: 5em;
+    height: 7em;
+}
+.button{
+    padding: 1em 2em;
+    background-color: rgb(40,40,40);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    font-size: 1.7em;
+    border-radius: .2em;
+    box-shadow: 0 0 1.3em rgba(40,40,40,.4);
+    text-transform: uppercase;
+}
