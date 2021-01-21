@@ -13,11 +13,13 @@ const PlayerContainer = () => {
     duration: 0,
     trackPercentage: 0,
   });
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(window.innerWidth > 600);
   const audioElm = useRef(null);
   useEffect(() => {
     const fetchMusics = async () => {
-      const musicsList = await axios.get('/data/musics.json');
+      const musicsList = await axios.get(
+        `${process.env.PUBLIC_URL}/data/musics.json`
+      );
       setMusics(musicsList.data);
       setActiveMusic(musicsList.data[0]);
     };

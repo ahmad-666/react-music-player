@@ -35,6 +35,7 @@
       "arrow-body-style": "off", //this is eslint rule but affect prettier
       "react/button-has-type": "warn",
       "no-plusplus": "off",
+      "react/default-props-match-prop-types": "warn",
       "prettier/prettier": [
         "warn", {
           "semi": true, 

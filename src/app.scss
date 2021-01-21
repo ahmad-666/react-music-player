@@ -40,3 +40,13 @@ body{
 .App{
     padding: 2em 0;
 }
+@media screen and (max-width:900px){
+    body{
+        font-size: 7px;
+    }
+}
+// @media screen and (max-width:500px){
+//     body{
+//         font-size: 6px;
+//     }
+// }

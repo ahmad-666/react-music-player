@@ -25,3 +25,8 @@
     padding: 1em 0em;
     text-transform: uppercase;
 }
+@media screen and (max-width:600px){
+    .sidenav{
+        width: 60%;
+    }
+}

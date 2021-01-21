@@ -18,8 +18,10 @@ const MusicPlayer = ({
   audioElm,
   musics,
   activeMusic,
+  newProp = 'init',
   setActiveMusic,
 }) => {
+  console.log(newProp);
   const togglePlaying = () => {
     if (!isPlaying) audioElm.current.play();
     else audioElm.current.pause();
@@ -103,6 +105,7 @@ MusicPlayer.defaultProps = {
   audioElm: {},
   musics: [],
   activeMusic: {},
+  newProp: 'default',
 };
 MusicPlayer.propTypes = {
   audioElm: PropTypes.object,
